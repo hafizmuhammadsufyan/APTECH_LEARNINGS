@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #mainDiv div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 50vw;
+            background-color: rgb(134, 209, 209);
+            border-radius: 15px;
+            box-shadow: 6px 8px 12px 0px rgba(0, 0, 0, 0.527);
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <!-- <h1 id="quote"></h1>
+        <p id="author"></p> -->
+    </div>
+
+
+    <script>
+        fetch("https://6911fda852a60f10c8202c93.mockapi.io/api/v1/quote")
+            .then(res => res.json())
+            .then(data => {
+                let div = document.getElementById("mainDiv")
+                // let quotes = document.getElementById("quote")
+                // let authors = document.getElementById("author")
+                console.log(data)
+
+                data.forEach(element => {
+                    console.log(element.quote)
+
+                    div.innerHTML += `
+                <div>
+                <h3>${element.quote}</h3>
+                <p>${element.author}</p>
+                </div>
+                `
+                });
+
+
+            })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+CREATE DATABASE aptech_db;
+
+-------------------------------------------------------------------------------------------------------------------
+
+USE aptech_db;
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+CREATE TABLE employees(
+	employee_id int PRIMARY KEY,
+    first_name varchar(50),
+    last_name varchar(50),
+    email varchar(100),
+    phone varchar(50),
+    hire_date varchar(50),
+    job_title varchar(50),
+    salary int,
+    department varchar(50)
+);
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+INSERT INTO employees
+VALUES
+(1, "Ali", "Anus", "ali@gmail.com","0345-6789123", "01-01-2025", "Software Engineer", 115000, "IT"),
+(2, "Sara", "Khan", "sara@gmail.com", "0301-1122334", "02-01-2025", "Data Analyst", 95000, "IT"),
+(3, "Ahmed", "Raza", "ahmed@gmail.com", "0312-4455667", "03-01-2025", "Software Engineer", 90000, "IT"),
+(4, "Ayesha", "Malik", "ayesha@gmail.com", "0333-7788990", "04-01-2025", "HR Manager", 85000, "HR"),
+(5, "Bilal", "Hussain", "bilal@gmail.com", "0344-2233445", "05-01-2025", "Accountant", 80000, "Finance"),
+(6, "Fatima", "Sheikh", "fatima@gmail.com", "0321-5566778", "06-01-2025", "Marketing Executive", 75000, "Marketing"),
+(7, "Usman", "Ali", "usman@gmail.com", "0305-9988776", "07-01-2025", "Project Manager", 150000, "Operations"),
+(8, "Hina", "Iqbal", "hina@gmail.com", "0316-3344556", "08-01-2025", "UI/UX Designer", 88000, "Design"),
+(9, "Zain", "Khalid", "zain@gmail.com", "0322-6677889", "09-01-2025", "QA Engineer", 82000, "IT"),
+(10, "Maryam", "Nawaz", "maryam@gmail.com", "0335-4455667", "10-01-2025", "Software Engineer", 90000, "IT");
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+we use these functions for reading / displaying the data of sum of anything
+
+SELECT SUM(salary) FROM employees;
+SELECT MAX(salary) FROM employees;
+SELECT MIN(salary) FROM employees;
+SELECT AVG(salary) FROM employees;
+SELECT COUNT(employee_id) FROM employees;
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+functions / commands for grouping the data and then summing the numbers
+
+
+SELECT department, sum(salary) from employees GROUP BY department;
+SELECT job_title, sum(salary) FROM employees WHERE job_title = "HR Manager";
+

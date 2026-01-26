@@ -1,0 +1,31 @@
+									"TRANSACTIONS"
+
+INTRODUCTION:
+	it is like all or nothing for example if user1 sends money to user2 if so if money sent and recieved both done successfully means transaction is done,
+	if there is an error at any point then transaction is unsuccessfull
+
+SYNTAX:
+	START TRANSACTION;
+		--SQL STATEMENTS;
+			update
+			update
+	COMMIT;
+	OR
+	ROLLBACK;
+
+WORKING:
+	EXAMPLE OF ALL BOTH QUERY EXECUTED
+		START TRANSACTION;
+
+			-- STEP 1: DEDUCTING 1000 FROM ALI
+				UPDATE accounts SET balance = balance - 1000 WHERE id = 1;
+
+
+			-- STEP 2: ADDING 1000 TO ALI
+				UPDATE accounts SET balance = balance + 1000 WHERE id = 2;
+
+			SELECT * FROM accounts; (PRINTING FOR TESTING THE QUERY EXECUTES OR NOT)
+
+		COMMIT; (WILL USE COMMIT IF BOTH QUERIES WILL BE EXECUTED PROPERLY , AND IF ANYONE QUERY WILL NOT BE EXECUTED SO WE WILL USE ROLLBACK (AND THE CONDITIONS WILL BE APPLIED THROUGH IF ELSE ON SERVER))
+
+		SELECT * FROM accounts; (ACTUAL UPDATE AS PER TRANSACTION QUERY COMMIT OR ROLLBACK)

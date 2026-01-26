@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE employees [
+<!-- + plus will be added to define the accurance of epmployee tag that will be one or more -->
+    <!ELEMENT employees (employee)+>
+    <!ELEMENT employee (id, name)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+]>
+
+<employees>
+    <employee>
+        <id>1001</id>
+        <name>Ali</name>
+    </employee>
+
+    <employee>
+        <id>1001</id>
+        <name>Ali</name>
+    </employee>
+    <employee>
+        <id>1001</id>
+        <name>Ali</name>
+    </employee>
+
+    
+</employees>

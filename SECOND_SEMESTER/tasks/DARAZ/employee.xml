@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<employees
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="employee.xsd">
+
+    <employee>
+        <id>0012</id>
+        <name>Ahmed</name>
+        <age>18</age>
+    </employee>
+    <employee>
+        <id>0012</id>
+        <name>Ahmed</name>
+        <age>18</age>
+    </employee>
+    <employee>
+        <id>0012</id>
+        <name>Ahmed</name>
+        <age>18</age>
+    </employee>
+</employees>

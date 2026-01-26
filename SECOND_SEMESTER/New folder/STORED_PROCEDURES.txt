@@ -1,0 +1,98 @@
+										"STORED PROCEDURE"
+INTRODUCTION:
+
+		Stored procedures are like functions in programming like in programming if we wanted to reuse some code again and again so we use functions
+		now in SQL if we want to re use the query so we use "STORED PROCEDURES"
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SYNTAX
+	CREATE PROCEDURE procedure_name (parameter)
+	BEGIN
+		SQL STATEMENT
+			(Select * from table);
+	END;
+
+
+but but but there is an error of closing point / delimeter ";" so we have to create new delemiter so the syntax will be 
+
+SYNTAX
+	DELIMETER // (assinging new delimeter)
+		CREATE PROCEDURE procedure_name (parameter)
+	BEGIN
+		SQL STATEMENT
+			(Select * from table);
+	END //
+
+	DELIMETER ; (this is redefine the old delimeter)
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WORKING
+	DELIMITER //
+
+	CREATE PROCEDURE getStudentTeacher()
+        BEGIN
+            SELECT
+                students.student_name,
+                teachers.teacher_name
+            FROM
+                students
+            LEFT JOIN
+                teachers
+            ON
+                students.t_id = teachers.teacher_id;
+        END //
+
+	DELIMITER ;
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WORKING WITH (IN) PARAMETER
+
+DELIMITER //
+
+    CREATE PROCEDURE getStudentsByTeacher(IN t_name varchar(50))
+        BEGIN
+            SELECT
+                students.student_name,
+                teachers.teacher_name
+            FROM
+                students
+            INNER JOIN
+                teachers
+            ON
+                students.t_id = teachers.teacher_id
+            WHERE
+                teachers.teacher_name = t_name;
+        END //
+    
+DELIMITER ;
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WORKING WITH (OUT) PARAMETER
+
+DELIMITER //
+
+    CREATE PROCEDURE getStudentCountByTeacherId(IN teach_id int, OUT total_students int)
+    BEGIN
+        SELECT
+            COUNT(*) INTO total_students
+        FROM
+            students 
+        WHERE
+            students.t_id = teach_id;
+    END //
+
+DELIMITER ;
+
+CALLING WITH (OUT) PARAMETER
+
+CALL getStudentCountByTeacherId(1, @count); (here we are just storing the calculations in the variable if we want to see the results so we have to print it seperately)
+
+SELECT @count; (here we are printing the stored variable)

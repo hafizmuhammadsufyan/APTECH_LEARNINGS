@@ -1,0 +1,22 @@
+// form consist of three things mainly these are the basics things to handle form
+
+// action (file name which will handle the data)
+// method (there are two methods get / post)
+// name   (input attribute name to generate rows on database)
+
+// GET method:
+        we use get method to put the data into URL like whenever server will send data to user so we will use
+        get method
+
+        REAL Example:
+            hidden forms when we want to show the order id
+
+// POST method:
+        we user post method whenever user will send any data to the server to maintain privacy this method use 
+        in every form almost
+
+        REAL Example:
+            login forms,
+            signup forms
+
+        whenever use will give the data

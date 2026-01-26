@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<orders
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="order.xsd">
+
+    <order>
+        <id>0014</id>
+        <customerId>0078</customerId>
+        <productId>0010</productId>
+    </order>
+</orders>

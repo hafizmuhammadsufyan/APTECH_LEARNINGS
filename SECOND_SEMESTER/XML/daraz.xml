@@ -1,0 +1,32 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<!DOCTYPE daraz [
+    <!ELEMENT daraz (products)>
+    <!ELEMENT products (product)+>
+    <!ELEMENT product (id, name, price)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+]>
+
+
+<daraz>
+    <products>
+        <product>
+            <id>500A</id>
+            <name>Apple mackbook air</name>
+            <price>350000</price>
+        </product>
+
+        <product>
+            <id>700A</id>
+            <name>Apple mackbook pro</name>
+            <price>950000</price>
+        </product>
+
+        <product>
+            <id>900A</id>
+            <name>SSD Samsung</name>
+            <price>300000</price>
+        </product>
+    </products>
+</daraz>

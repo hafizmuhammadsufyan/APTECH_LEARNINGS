@@ -1,0 +1,60 @@
+command for Inner join that shows only common data we use inner join
+
+SELECT students.student_id, students.student_name , teachers.teacher_id, teachers.teacher_name 
+FROM students (table 1)
+INNER JOIN teachers (table 2)
+ON students.t_id (table1.col_name) = teachers.teacher_id (table2.col_name);
+
+-----------------------------------------------------------------------------------------------------------------
+
+command to display all data of left table we use left join
+
+SELECT students.student_id, students.student_name , teachers.teacher_id, teachers.teacher_name 
+FROM students
+LEFT JOIN teachers
+ON students.t_id = teachers.teacher_id;
+
+-----------------------------------------------------------------------------------------------------------------
+
+command to display all data of right table we use right join
+
+SELECT students.student_id, students.student_name , teachers.teacher_id, teachers.teacher_name 
+FROM students
+RIGHT JOIN teachers
+ON students.t_id = teachers.teacher_id;
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+if we want to display both tables full full data so we use like full outer join so we use union method
+
+SELECT students.student_id, students.student_name , teachers.teacher_id, teachers.teacher_name 
+FROM students
+LEFT JOIN teachers
+ON students.t_id = teachers.teacher_id
+
+UNION
+
+SELECT students.student_id, students.student_name , teachers.teacher_id, teachers.teacher_name 
+FROM students
+RIGHT JOIN teachers
+ON students.t_id = teachers.teacher_id;
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+"SELF JOIN"
+
+if we want to display the data from same table but in different category so we use self join example like employees => employee , manager this both will come from same table
+
+SELECT
+t1.employee_name AS employee, (getting employee name from t1 and setting the name of that column as employee)
+t2.employee_name AS manager   (getting employee name from t2 and setting the name of that column as manager)
+
+FROM 
+	employees AS t1 (breaking the table (employee) and setting it as (t1) )
+INNER JOIN
+	employees AS t2 (breaking the table (employee) and setting it as (t2) )
+    
+ON 
+	t1.manager_id = t2.employee_id;  (t1 is a employee table that's why we are getting its (manager_id) and checking it with t2's (employee_id) cuz t2 is manager table

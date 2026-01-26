@@ -1,0 +1,19 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<company>
+    <employee>
+        <id>1001</id>
+        <name>Ali</name>
+        <designation>CEO</designation>
+        <salary>25000</salary>
+        <joinDate>10/29/2025</joinDate>
+    </employee>
+
+    <employee>
+        <id>1001</id>
+        <name>Ali Abdullah</name>
+        <designation>CTO</designation>
+        <salary>35000</salary>
+        <joinDate>09/29/2025</joinDate>
+    </employee>
+</company>

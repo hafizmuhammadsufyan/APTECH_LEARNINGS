@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suppliers
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="supplier.xsd">
+
+    <supplier>
+        <supId>0001</supId>
+        <supName>Apple</supName>
+        <products>
+            <product>
+                <pName>Iphone</pName>
+            </product>
+            <product>
+                <pName>Imac</pName>
+            </product>
+        </products>
+        <products>
+            <product>
+                <pName>Iphone</pName>
+            </product>
+            <product>
+                <pName>Imac</pName>
+            </product>
+        </products>
+    </supplier>
+    <supplier>
+        <supId>0001</supId>
+        <supName>Samsung</supName>
+        <products>
+            <product>
+                <pName>Iphone</pName>
+            </product>
+            <product>
+                <pName>Imac</pName>
+            </product>
+        </products>
+        <products>
+            <product>
+                <pName>Iphone</pName>
+            </product>
+            <product>
+                <pName>Imac</pName>
+            </product>
+        </products>
+    </supplier>
+</suppliers>

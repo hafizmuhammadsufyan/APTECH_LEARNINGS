@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Hello World</h1>
+
+    <script>
+        fetch("settings.json")
+        .then(res => res.json())
+        .then(cfg => {
+            if(cfg.theme === "dark"){
+                document.body.style.background = "#222"
+            }else{
+                document.body.style.background = "plum"
+
+            }
+
+            document.getElementById("title").style.fontSize = cfg.fontSize
+        })
+    </script>
+</body>
+</html>

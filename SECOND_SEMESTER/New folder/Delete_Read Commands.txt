@@ -1,0 +1,38 @@
+query for deleting data from the table
+
+DELETE FROM employee where id = 3;
+
+commands for selecting / reading data from database
+
+SELECT * FROM employee;
+
+SELECT id, name, age FROM employee;
+
+SELECT * FROM employee WHERE id = 6;
+
+commands to select / read data in assending order
+
+SELECT * FROM employee ORDER BY name ASC;
+
+SELECT * FROM employee ORDER BY salary DESC;
+
+commands to add limit while fetching data
+
+
+SELECT * FROM employee LIMIT 3;
+
+if we insert , then number so add comma
+
+
+SELECT * FROM employee LIMIT 3,3;
+
+
+to make command run syncrounously like dependently then type two commands at once
+
+
+SELECT * FROM employee ORDER BY salary DESC LIMIT 1,1;
+
+command to remove duplicate name or any row
+
+
+SELECT DISTINCT name FROM employee;

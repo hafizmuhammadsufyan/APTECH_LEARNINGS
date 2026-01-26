@@ -1,0 +1,8 @@
+										"PHP"
+
+INTRODUCTION:
+	PHP: php => hypertext preprocessor
+
+		php is a server side language which can not be used directly into our PCs so we use a software (XAMPP) 
+		and since XAMPP only converts specific location in our system into server then we will have to create folder on that specific locaton.
+		so we will have to create all the folders on that location that is called (htdocs)
