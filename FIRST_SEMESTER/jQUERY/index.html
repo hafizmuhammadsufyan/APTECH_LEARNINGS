@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="main-heading">Welcome to jQuery</h1>
+    <!-- <h1 class="head1">This is id</h1>
+    <h1 class="head2">This is class</h1> -->
+
+    <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Contact us</li>
+        <li>Shop</li>
+    </ul>
+    <button type="submit" id="btn">Click to apply functions</button>
+    <button type="submit" id="btn1">hide</button>
+    <button type="submit" id="btn2">show</button>
+    <button type="submit" id="btntoggle">Hide / Show</button>
+
+
+    <input type="text" name="email" id="email">
+
+
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#main-heading").css("text-align", "center")
+
+            //.css applying css
+
+            $("#btn").click(function () {
+                // $(".head1").css("color", "blue")
+                // $(".head2").css("color", "red")
+
+                //child selectors
+                $("ul li").css("font-size", "40px")
+                $("ul li:odd").css("color", "red")
+                $("ul li:even").css("color", "blue")
+
+
+
+            })
+
+            //.hide hiding element
+            $("#btn1").click(function () {
+                $("ul").hide(3000, function(){
+                    alert("li are hidden")
+                })
+            })
+
+            //.show showing element
+            $("#btn2").click(function () {
+                $("ul li").show()
+            })
+
+            //.toggle hide/show
+            $("#btntoggle").dblclick(function () {
+                $("ul li").toggle("slow")
+            })
+
+
+            //mouseenter mouseleave
+            $("#main-heading").mouseenter(function(){
+                $(this).css("color","red")
+            })
+            $("#main-heading").mouseleave(function(){
+                $(this).css("color","black")
+            })
+
+            //focus only works on input fields
+            $("#email").focus(function(){
+                $(this).css("background-color","blue")
+            })
+
+            $("#main-heading").on({
+                mouseenter: function(){$(this).css("color","red")},
+                mouseleave: function(){$(this).css("color","blue")},
+                click: function(){$(this).css("background-color","green")},
+            })
+
+        })
+    </script>
+</body>
+
+</html>

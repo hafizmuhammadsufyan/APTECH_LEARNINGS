@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 50vh;
+            width: 50vw;
+            background-color: rgb(236, 173, 128);
+        }
+        .box{
+            height: 7vh;
+            width: 7vw;
+            background-color: rgb(240, 112, 112);
+            transition-property: transform, background-color, font-size, color;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.51, 0.02, 0.1, 0.63);
+            transition-delay: 0s;
+        }
+
+        .translate:hover{
+            transform: translateX(100%) translateY(100%) scale(2);
+            background-color: rgb(0, 0, 0);
+            font-size: 22px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">Box</div>
+    </div>
+</body>
+</html>

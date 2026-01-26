@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="bg-black">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-1 sticky-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BLOGSY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#ourservices">Our services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Our pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact us -->
+    <section id="contactus">
+        <h1 class="my-5 text-center text-white">Contact Us</h1>
+
+
+        <div class="container">
+            <form class="text-white">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="text-white">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Feedback</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid bg">
+            <footer class="py-4 mt-5">
+                <ul class="nav justify-content-center border-bottom border-white pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                    <li class="nav-item"><a href="#ourservices" class="nav-link px-2 text-white">Our services</a></li>
+                    <li class="nav-item"><a href="#ourpricing" class="nav-link px-2 text-white">Our Pricing</a></li>
+                    <li class="nav-item"><a href="#contactus" class="nav-link px-2 text-white">Contact Us</a></li>
+                </ul>
+                <p class="text-center text-white">© 2025 Company, Inc</p>
+            </footer>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

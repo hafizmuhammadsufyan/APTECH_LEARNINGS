@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Email Validator</h1>
+    <input type="text" id="email" placeholder="Enter Your Email">
+    <button type="submit" onclick="emailchecker()">Check</button>
+
+
+    <script>
+
+        function emailchecker() {
+            let email = document.getElementById("email").value
+            let pattern = /^[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+\.[a-z]{2,4}$/
+
+            if (pattern.test(email)) {
+                alert("Valid")
+            } else {
+                alert("Invalid")
+            }
+        }
+    </script>
+</body>
+
+</html>

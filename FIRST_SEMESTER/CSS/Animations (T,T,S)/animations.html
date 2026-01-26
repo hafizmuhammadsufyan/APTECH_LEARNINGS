@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 80vh;
+            width: 50vw;
+            background-color: rgb(248, 131, 248);
+
+        }
+        .box{
+            height: 10vh;
+            width: 10vw;
+            background-color: rgb(156, 35, 255);
+            animation-name: myAnimation;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            /* animation-direction: reverse; */
+            animation-play-state: running;
+            /* animation-iteration-count: 5; */
+        }
+
+        @keyframes myAnimation{
+            from{
+
+            }
+            to{
+                transform: translateX(35vw) scalex(2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

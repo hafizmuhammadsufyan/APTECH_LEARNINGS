@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+        .main-section{
+            margin-top: 100px;
+        }
+        #main-heading{
+                text-align: center;
+                font-size: 30px;
+        }
+
+        .main-container{
+            /* width: 100vw; */
+            /* height: 90vh; */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 40px;
+        }
+
+        .plans{
+            background-color: white;
+            /* flex-grow: 2; */
+            width: 250px;
+            height: 170px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 0px 0px 0px 20px;
+            align-items: flex-start;
+            justify-content: center;
+            border-radius: 7px;
+            flex-grow: 2;
+            box-shadow: 7px 4px 9px 0px black;;
+            
+
+        }
+        .basic{
+            order: 1;
+        }
+        .premium{
+            flex-shrink: 1;
+        }
+
+        h1{
+            font-size: 20px;
+        }
+
+        .pricing{
+            font-size: 20px;
+            padding: 15px 0px 15px 0px;
+        }
+
+        ul li{
+            text-decoration: none;
+            list-style: none;
+        }
+            
+    </style>
+</head>
+<body>
+    <section class="main-section">
+        <h1 id="main-heading">Choose Your Plan</h1>
+    
+
+    <div class="main-container">
+        <div class="plans basic">
+            <h1>Basic</h1>
+            <p class="pricing">9$/month</p>
+            <ul>
+                <li>1 User</li>
+                <li>5gb Storage</li>
+                <li>Email Support</li>
+            </ul>
+        </div>
+        <div class="plans">
+            <h1>Pro</h1>
+            <p class="pricing">19$/month</p>
+            <ul>
+                <li>5 Users</li>
+                <li>50gb Storage</li>
+                <li>Priority Support</li>
+            </ul>
+        </div>
+        <div class="plans premium">
+            <h1>Premium</h1>
+            <p class="pricing">29$/month</p>
+            <ul>
+                <li>Unlimited Users</li>
+                <li>200gb Storage</li>
+                <li>24/7 Support</li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>

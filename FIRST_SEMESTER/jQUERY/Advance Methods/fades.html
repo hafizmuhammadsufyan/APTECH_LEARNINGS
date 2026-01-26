@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 50vh;
+            width: 50vw;
+            border: 2px solid plum;
+            background-color: cyan;
+            display: block;
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div class="box">
+        <h1>
+            Hey I am a div
+        </h1>
+    </div>
+    <button type="submit" id="fadein">Fade in</button>
+    <button type="submit" id="fadeout">Fade out</button>
+    <button type="submit" id="fadetoggle">Fade toggle</button>
+    <button type="submit" id="fadeto">Fade to</button>
+    <button type="submit" id="remove">Remove all styling</button>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            //FADES
+            $("#fadein").click(function(){
+                $(".box").fadeIn()
+            })
+            $("#fadeout").click(function(){
+                $(".box").fadeOut()
+            })
+            $("#fadetoggle").click(function(){
+                $(".box").fadeToggle()
+            })
+            $("#fadeto").click(function(){
+                $(".box").fadeTo(2000, 0.3)
+            })
+            $("#remove").click(function(){
+                $(".box").removeClass("box")
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">This is <b>Para</b></p>
+    <button type="submit" id="btn">Submit</button><br><br>
+    <a href="//https:google.com" id="google-link">open google</a>
+    <button type="submit" id="btn-1">Submit</button>
+    
+
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                let demo = $("#demo").html()
+                alert(demo)
+            })
+            $("#btn-1").click(function(){
+                let attr = $("#google-link").attr("href")
+                alert(attr)
+            })
+        })
+    </script>
+</body>
+</html>

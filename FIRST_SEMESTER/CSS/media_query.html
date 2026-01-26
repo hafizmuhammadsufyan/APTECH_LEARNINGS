@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --primaryColor: darkcyan;
+            --mediaColor: rgb(93, 176, 255);
+        }
+        body{
+                background-color: var(--primaryColor) ;
+        }
+        .boxes{
+            display: flex;
+            justify-content: center;
+        }
+
+        .box{
+            height: 350px;
+            width: 300px;
+            background-color: antiquewhite;
+            margin: 15px;
+            margin-top: 15px;
+            
+            /* box-sizing: border-box; */
+
+        }
+        @media only screen and (max-width:576px){
+            body{
+                background-color: var(--mediaColor);
+            }
+
+            .boxes{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Hey I am div</div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

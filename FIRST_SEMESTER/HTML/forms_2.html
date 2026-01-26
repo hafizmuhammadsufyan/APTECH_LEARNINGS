@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+        </div>
+        <div>
+            <label for="male female">Gender:</label>
+
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="condition" id="condition" value="agreed" required>
+            <label for="condition">Termes and conditions</label>
+        </div>
+        <div>
+            <textarea name="feedback" id="feedback" cols="30" rows="10" required placeholder="Any Feedback for us!"></textarea>
+        </div>
+        <div>
+            <label for="city">Where are you from?</label>
+            <select name="city" id="city">
+                <option value="-1">Select Your City</option>
+                <option value="karachi">Karachi</option>
+                <option value="lahore">Lahore</option>
+                <option value="islamabad">Islamabad</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

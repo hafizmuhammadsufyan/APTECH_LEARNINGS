@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo-img {
+            height: 60px;
+        }
+
+        nav {
+            background-color: white;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+        }
+
+        section .tabs ul {
+            display: flex;
+            gap: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .tabs ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+
+        /* css for grid | making full page of ultra edit */
+
+
+        .item {
+            width: 302px;
+            background-color: rgb(245, 242, 239);
+            text-align: center;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .btn {
+            padding: 7px;
+            border-radius: 10px;
+            /* margin: 25px 0px 20px 0px; */
+            background-color: rgb(42, 184, 42);
+            color: white;
+        }
+
+        .hash {
+            padding-top: 20px;
+            font-size: 10px;
+        }
+
+        .hash p {
+            font-size: 8px;
+            padding-top: 10px;
+        }
+
+        .item-lang {
+            padding: 15px 0px 30px 0px;
+        }
+
+        .first {
+            margin: 50px 0px 0px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        @media only screen and (max-width: 1000px) {
+            .grid{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            .grid{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <section>
+            <div class="logo">
+                <img class="logo-img" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Background-2.png"
+                    alt="Logo">
+            </div>
+        </section>
+        <section>
+            <div class="tabs">
+
+                <ul>
+                    <li>Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>For Business <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Academic Learnings <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15"
+                            height="15" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Our Company <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M17 17L21 21" stroke="#141B34" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+    <main>
+        <section class="first">
+            <div class="grid">
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-lang">
+                        <h3>English</h3>
+                    </div>
+                    <button class="btn" type="submit">Download 64-bit</button>
+                    <div class="hash">
+                        SHA256
+                        <p style="text-transform: uppercase;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nesciunt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

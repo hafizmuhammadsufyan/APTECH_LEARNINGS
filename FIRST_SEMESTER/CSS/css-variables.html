@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        :root{
+            --primaryColor: darkcyan;
+            --secondayColor: rgb(74, 179, 179);
+            --marginTop: 10px;
+        }
+
+        /* ul{
+            display: inline-block;
+        } */
+
+        ul li:first-child{
+            --color: rgb(13, 95, 91);
+            background-color: var(--color);
+        }
+
+        ul li{
+            display: inline-block;
+            list-style: none;
+            padding: 10px;
+            margin: var(--marginTop);
+            color: white;
+        }
+        nav{
+            background-color: var(--primaryColor);
+            width: 100vw;
+        }
+        .container{
+            background-color: var(--secondayColor);
+            height: 120px;
+            width: 100vw;
+            box-sizing: border-box;
+            margin-top: var(--marginTop);
+            padding: 20px;
+            color: whitesmoke;
+            text-align: justify;
+        }
+
+   </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sapiente placeat voluptatum qui minima odit amet officia. Exercitationem saepe iste rerum. Est, excepturi labore autem officiis ullam error recusandae nemo!. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At modi perspiciatis quibusdam, delectus et eveniet reiciendis natus dolorum fugit? Magni ratione ea praesentium. Quia tenetur maxime accusantium officiis, iure a culpa atque placeat quae ut, quam delectus vero, eum ea corporis provident nulla numquam sunt laboriosam voluptates debitis perspiciatis doloribus odit! Beatae, repellendus nobis! Laborum fugit dolore accusamus earum, magni libero recusandae nisi exercitationem vel quaerat doloremque, tempora ullam veritatis.</p>
+    </div>
+</body>
+</html>

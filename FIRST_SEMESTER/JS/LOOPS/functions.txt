@@ -1,0 +1,10 @@
+functions:
+
+it reduces code in writing like we dont have to write long codes
+
+syntax
+function function_name(){
+
+	block of code
+
+}

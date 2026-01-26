@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .classMethod {
+            color: red;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="para">this is jQuery class method</p>
+    <button type="submit" id="btn">submit</button>
+
+    <script src="script.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#btn").click(function () {
+                // $("#para").addClass("classMethod")
+                // $("#para").removeClass("classMethod")
+                // $("#para").toggleClass("classMethod")
+            })
+
+            //.css applying css methods
+            $("#btn").click(function () {
+                $("#para").css({
+                    "font-size": "40px",
+                    "background-color": "navy",
+                    "color": "white",
+                })
+            })
+
+        }
+        )
+    </script>
+</body>
+
+</html>

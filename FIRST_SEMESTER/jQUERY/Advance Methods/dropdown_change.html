@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="courses" id="courses">
+        <option value="-1">Select an option</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Cyber Security">Cyber Security</option>
+        <option value="BlockChain">BlockChain</option>
+    </select>
+
+    <button type="submit" id="get-value">Submit</button>
+
+    <p id="result"></p>
+
+
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#courses").change(function () {
+
+                let course = $("#courses").val()
+
+                if (course == "-1") {
+                    $("#result").text("Please select a course")
+                } else {
+                    $("#result").text("You have selected " + course)
+                }
+            })
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent{
+            /* height: 50vh;
+            width: 80vw; */
+            border: 2px solid black;
+            margin: 50px;
+            padding: 50px;
+            position: absolute;
+            
+            
+        }
+
+        .box{
+            height: 100vh;
+            width: 70vw;
+            border: 2px solid maroon;
+            margin: 5px;
+        }
+        .bg-col1{
+            height: 100px;
+            background-color: lightcoral;
+            position: sticky;
+            top: 0;
+            /* position: absolute; */
+            
+            /* position: relative;
+            z-index: 1; */
+           
+        }
+        .bg-col2{
+            background-color: lightgreen;
+            /* position: absolute; */
+            /* bottom: 0px; */
+            /* left: 500px; */
+            /* position: relative;
+            bottom: 50px;
+            left: 25px; */
+           
+        }
+        .bg-col3{
+            background-color: lightblue;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box bg-col1"></div>
+        <div class="box bg-col2"></div>
+        <div class="box bg-col3"></div>
+    </div>
+</body>
+</html>

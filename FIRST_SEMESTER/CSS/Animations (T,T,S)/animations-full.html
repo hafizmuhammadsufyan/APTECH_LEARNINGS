@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 80vh;
+            width: 50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            background-color: rgb(248, 131, 248);
+
+        }
+        .box{
+            height: 10vh;
+            width: 10vw;
+            background-color: rgb(156, 35, 255);
+            /* animation-name: myAnimation;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 2;
+            animation-direction: normal;
+            animation-fill-mode: forwards; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: myAnimation 4s ease-in-out 1s 5 normal forwards,
+                        mySecondAnimation 4s ease-in-out 1s 5 normal forwards;
+        }
+
+        @keyframes myAnimation{
+            from{
+                background-color: aquamarine;
+            }
+            to{
+                /* transform: translateX(35vw) scalex(2); */
+                background-color: blueviolet;
+            }
+        }
+
+        @keyframes mySecondAnimation{
+            0%{
+                transform: rotate(45deg) translateX(100px);
+            }
+            25%{
+                transform: rotate(90deg) translateX(200px);
+            }
+            50%{
+                transform: rotate(135deg) translateX(200px);
+            }
+            75%{
+                transform: rotate(180deg) translateX(200px);
+            }
+            100%{
+                transform: rotate(360deg) translateX(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
