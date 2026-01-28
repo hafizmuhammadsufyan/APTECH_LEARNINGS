@@ -1,0 +1,19 @@
+
+
+
+
+
+// img associative array:
+        this consist of 6 things:
+
+                [name]      : where the files name shows
+                [full_path] : where the files full_path stores that is same as (name)
+                [type]      : where the files type stores like image / jpeg or pdf 
+                [tmp_name]  : where the files temporary address stores of the main server
+                [error]     : where the files error shows if occors any while uplaoding the file
+                [size]      : where the files size stores in bytes
+
+
+// image storage and uplaoding
+
+            when the image is uploaded on browser so it get uploaded on the server and its path get stored on DB 
